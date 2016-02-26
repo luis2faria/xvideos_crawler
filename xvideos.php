@@ -17,7 +17,7 @@ $main = true;
 while(true){
 	
 	if ( $main === false ) { $i = $i + 1; $main = true; }
-	if ( $i === (count($links)-1) ){ exit; }
+	if ( $i === count($links) ){ exit; }
 	
 	while($main === true ){
 		$a = $a + 1;
