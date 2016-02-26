@@ -28,7 +28,7 @@ for( $i = 0; $i<count($links); $i++ ){
 		preg_match_all( '/<a href=\"([^\"]*)\">(.*)<\/a>/iU' , $links_var , $match );
 	
 		$links_main_var = $match[1];
-		if( empty( $links_main_var ) ){ $main = false; } else { $main = true; }
+		if( empty( $links_main_var ) ){ $main = false; $a = 0; } else { $main = true; }
 	
 		foreach( $links_main_var as $tmp ){
 			$links_main[] = 'http://www.xvideos.com' . $tmp; 
