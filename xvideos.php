@@ -20,7 +20,7 @@ for( $i = 0; $i<count($links); $i++ ){
 	
 	while($main === true){
 		$a = $a + 1;
-		$links_var = file_get_contents($links[$i]);
+		$links_var = file_get_contents($links[$i][$a]);
 		$links_var = explode( '<div class="mozaique">' , $links_var );
 		$links_var = explode( '<div class="pagination ">' , $links_var[1] );
 		$links_var = $links_var[0];
