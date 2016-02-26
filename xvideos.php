@@ -26,7 +26,7 @@ while(true){
 		#echo $links[$i] . '/' . $a;
 		
 		$links_var = file_get_contents($links[$i] . '/' . $a);
-		flush();
+		#flush();
 		
 		$links_var = explode( '<div class="mozaique">' , $links_var );
 		$links_var = explode( '<div class="pagination ">' , $links_var[1] );
