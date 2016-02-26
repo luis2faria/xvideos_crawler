@@ -1,7 +1,7 @@
 <?php
 
 $var = file_get_contents( 'http://www.xvideos.com/tags' );
-$var = explode('<ul id="tags">',$var);
+$var = explode( '<ul id="tags">' , $var );
 $var = explode( '<div class="main-categories">' , $var[1] );
 $var = $var[0];
 preg_match_all( '/<a href=\"([^\"]*)\">(.*)<\/a>/iU' , $var , $match );
