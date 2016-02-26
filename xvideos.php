@@ -21,7 +21,8 @@ while(true){
 	
 	while($main === true ){
 		$a = $a + 1;
-		echo $links[$i] . '/' . $a;
+		
+		#echo $links[$i] . '/' . $a;
 		
 		$links_var = file_get_contents($links[$i] . '/' . $a);
 		flush();
