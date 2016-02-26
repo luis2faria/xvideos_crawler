@@ -43,7 +43,6 @@ while(true){
 		}
 	}
 	# $links_main (LINKS DO SITE)
-	#var_dump($links_main);
 	
 }
 ?>
