@@ -7,9 +7,9 @@ $var = explode( "\n" , $var );
 $var = array_values ( array_unique ( $var ) );
 
 foreach( $var as $tmp ){
-	fwrite( $fp, $tmp . "\n" );
+	fwrite( $fp , $tmp . "\n" );
 }
 
-fclose($fp);
+fclose( $fp );
 
 ?>
